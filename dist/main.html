@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用AngularJS构建SPA</title>
+    <link rel="stylesheet" href="../node_modules/amazeui/dist/css/amazeui.min.css"/>
+</head>
+<body ng-app="spaApp">
+    <!--header start 引入页头文件-->
+    <section id="header" ng-include="'header.html'">
+
+    </section>
+    <!--header end-->
+
+    <!--content start 使用ng-view显示路由控制的html模板 -->
+    <section id="content" class="am-container">
+        <ng-view></ng-view>
+    </section>
+    <!--content end-->
+
+    <!--footer start 引入页脚文件-->
+    <section id="footer" ng-include="'footer.html'"></section>
+    <!--footer end-->
+
+    <!-- js framework file -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/amazeui/dist/js/amazeui.min.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+
+    <!-- js config file 各配置文件 -->
+    <script src="js/config/app_config.js"></script>
+    <script src="js/config/route_config.js"></script>
+
+    <!-- js controller file 各html模板控制器 -->
+    <script src="js/controller/headerCtrl.js"></script>
+    <script src="js/controller/footerCtrl.js"></script>
+    <script src="js/controller/pageOneCtrl.js"></script>
+    <script src="js/controller/pageTwoCtrl.js"></script>
+
+</body>
+</html>

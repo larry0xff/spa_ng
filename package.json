@@ -1,0 +1,17 @@
+{
+  "name": "spa_ng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazeui": "^2.7.2",
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.8",
+    "jquery": "^3.2.1"
+  }
+}
